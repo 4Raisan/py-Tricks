@@ -12,6 +12,8 @@ class [clas name]:                   # self use to coonect with object
 '''
 
 
+name = 'IDK'   # Outside global
+
 class Car:       # class
   
   def __init__(self,name,color):      # assign with __init__ & self
@@ -29,6 +31,10 @@ class Car:       # class
     else:
       return 133
 
-
 Lambo = Car('Lambo Av.', 'Black')  # all calling case-sensitive
 Lambo.description()
+
+print()
+
+BMW1 = Car('BMW', 'White')
+print(BMW1.max_speed())
