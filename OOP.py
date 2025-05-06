@@ -23,6 +23,12 @@ class Car:       # class
     print('Car is', self.name)
     print('U cars color is', self.clr)
 
+  def max_speed(self):
+    if self.name=='BMW':
+      return 255
+    else:
+      return 133
+
 
 Lambo = Car('Lambo Av.', 'Black')  # all calling case-sensitive
 Lambo.description()
