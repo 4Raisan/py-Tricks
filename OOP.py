@@ -9,6 +9,9 @@ class [clas name]:                   # self use to coonect with object
 
 [veribale/object] = [class(data)]
 [callfunction.()]
+
+-----------------------------------------------
+self.[same class function name].()
 '''
 
 
@@ -38,3 +41,35 @@ print()
 
 BMW1 = Car('BMW', 'White')
 print(BMW1.max_speed())
+
+
+##############################################################################
+
+name,bro = 'idk', 69
+
+class CryptoBro:
+    
+    def __init__(self, name):
+        self.cryname = name
+
+    def price(self):
+        if self.cryname == "Bitcoin" :
+            bro = 'More than $ 100,000'     # self.bro = ...
+        CryptoBro.reply(bro)                # self.reply(self.bro)
+            
+    def reply(bro):                         # def reply(self, bro)
+        print(bro)
+        
+    
+# CryptoBro('Bitcoin').price()
+satoshi = CryptoBro('Bitcoin')
+satoshi.price()
+
+# Global veriable
+# name.price()      # no data for conditions assign to class
+# reply(bro) - global -         # make reply() with self, wboid this
+
+'''
+# --- Output ---
+More than $ 100,000
+'''
