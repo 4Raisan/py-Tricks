@@ -15,6 +15,12 @@ int_numbers = list(map(int, numbers)) # make list with converting strings to int
 print(int_numbers)  # [1, 2, 3]
 
 # 2
-names = list(map(str.srtrip(), input('Enter names::: ').split("/")))
-# so now our inputs must be seperated by the "/" (no spaces) ::: mala/kamal/sunil
-print(names)  # ['mala', 'kamal', 'sunil']
+names = list(map(str.strip, input('Enter names::: ').split("/")))  # ::: A/B/  C/D/E F
+# inputs must be seperated by the "/"
+# avoid whitespaces on the iteams after they splitted
+print(names)  # ['A', 'B', 'C', 'D', 'E F']
+
+# 3 
+names_2 = list(map(str, input('Enter names::: ').split("/")))  # ::: A/B/  C/D/E F
+# inputs must be seperated by the "/"
+print(names_2)  # ['A', 'B', '  C', 'D', 'E F']
