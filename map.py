@@ -24,3 +24,23 @@ print(names)  # ['A', 'B', 'C', 'D', 'E F']
 names_2 = list(map(str, input('Enter names::: ').split("/")))  # ::: A/B/  C/D/E F
 # inputs must be seperated by the "/"
 print(names_2)  # ['A', 'B', '  C', 'D', 'E F']
+
+
+# 4
+list_1 = list(map(int, input("Enter for list 1 ::: ").split()))
+list_2 = list(map(int, input("Enter for list 2 ::: ").split()))
+
+def my_printer(a,b):
+  print(a+b)
+
+giving = list(map(my_printer, list_1, list_2))
+
+# scenario 1
+# 1 2 3 / 1 2 3 ---output--= 2
+#                            4
+#                            6
+
+# scenario 2 (no same lengths)
+# 1 2 3 4 5 / 1 2 3 ---output--= 2
+#                                4
+#                                6
