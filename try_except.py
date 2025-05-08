@@ -10,6 +10,9 @@ except (ValueError, TypeError):    # Errors must be case sensitive
 try:
     num = 100 / a
     print("Answer is :::", num)
+except Exception as e:   # Unexpected error: ZeroDivisionError: division by zero
+    print(f"Unexpected error: {type(e).__name__}: {e}")
+
 '''
 except Exception:    # Unexpected error: type: <class 'Exception'>
     print(f"Unexpected error: {type(Exception).__name__}: {Exception}")
