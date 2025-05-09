@@ -13,10 +13,21 @@
 
 # list(map(lambda: x: x**2, [#, #, #])) - (lambda: {v}: {process}, [data, data...])
 
+
+# use multi variable input
+a,b = map(int, input("Enter A and B (seperate with space)::: ").split())
+print(a)
+print(b)
+
+# list(map(lambda: x: x**2, [#, #, #])) - (lambda: {v}: {process}, [data, data...])
+squares = list(map(lambda: x: x**2, [1, 2, 3, 4]))
+print(squares)  # [1 4 9 16]
+
 # 1
 numbers = ["1", "2", "3"]
 int_numbers = list(map(int, numbers)) # make list with converting strings to int
 print(int_numbers)  # [1, 2, 3]
+
 
 # 2
 names = list(map(str.strip, input('Enter names::: ').split("/")))  # ::: A/B/  C/D/E F
@@ -48,9 +59,3 @@ giving = list(map(my_printer, list_1, list_2))
 # 1 2 3 4 5 / 1 2 3 ---output--= 2
 #                                4
 #                                6
-
-
-# list(map(lambda: x: x**2, [#, #, #])) - (lambda: {v}: {process}, [data, data...])
-squares = list(map(lambda: x: x**2, [1, 2, 3, 4]))
-print(squares)  # [1 4 9 16]
-
