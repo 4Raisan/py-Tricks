@@ -1,3 +1,5 @@
+#  map( {dtype} , ... )
+
 # map() - acts as iteratively and move from iteam to iteam
 #       - must be mention the data type we want inside the map(int, ...)
 #       - when in inputs, inputs must be seperated in spaces or we must use .split("□") at the end
@@ -8,6 +10,8 @@
 # list(map(int, input('Enter names::: ').split(",")))  - use .split("□") at the end of the input
 # lsit(map(str.strip, input('Enter::: ').split("/")))  - avoid whitespaces on the iteams after they splitted
 # list(map({function name}, {list_1}, {list_2})) - use with functions
+
+# list(map(lambda: x: x**2, [#, #, #])) - (lambda: {v}: {process}, [data, data...])
 
 # 1
 numbers = ["1", "2", "3"]
@@ -44,3 +48,9 @@ giving = list(map(my_printer, list_1, list_2))
 # 1 2 3 4 5 / 1 2 3 ---output--= 2
 #                                4
 #                                6
+
+
+# list(map(lambda: x: x**2, [#, #, #])) - (lambda: {v}: {process}, [data, data...])
+squares = list(map(lambda: x: x**2, [1, 2, 3, 4]))
+print(squares)  # [1 4 9 16]
+
