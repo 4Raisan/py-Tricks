@@ -26,3 +26,12 @@ Whitespaces:
          >  Form Feed ('\f') – Page break character. 
 '''
 
+text = '  Hello Rashen  \n'
+print(text.strip())   # 'Hello Rashen'
+print(text.lstrip())  # 'Hello Rashen  \n'
+print(text.rstrip())  # '  Hello Rashen'
+
+text2 = '19 7 Sri Lanka Rx x'
+print(text2.strip('1 Rx'))  # '9 7 Sri Lanka'
+print(text2.lstrip('19'))   # ' 7 Sri Lanka Rx x'
+print(text2.rstrip(' x'))    # '19 7 Sri Lanka R'
