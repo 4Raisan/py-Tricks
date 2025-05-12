@@ -1,9 +1,18 @@
+'''
+try:
+    process/I/O
+except:
+    process/I/O
+    pass  # null operation - it does nothing when executed.    
+'''
+
 # For Specific Errors / processes must be under the [ try: & except (): ] sections 
 try:
     num = 100 / 4
     print("Answer is :::", num)
 except (ValueError, TypeError):    # Errors must be case sensitive
-    print("Error: Invalid input!")
+    pass  # pass statement is a null operation - it does nothing when executed.
+    #print("Error: Invalid input!")
 
 
 # For ALL Errors / processes must be under the [ try: & except (): ] sections 
